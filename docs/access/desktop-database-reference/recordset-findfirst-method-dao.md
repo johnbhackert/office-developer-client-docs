@@ -137,7 +137,7 @@ The following example shows how to use the FindFirst and FindNext methods to fin
         'Check the result
         If rst.NoMatch Then
             MsgBox "Record not found."
-            GotTo Cleanup
+            GoTo Cleanup
         Else
             Do While Not rst.NoMatch
                 MsgBox "Customer name: " & rst!CustName
